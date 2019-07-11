@@ -24,6 +24,7 @@ class SongInfoActivity : AppCompatActivity() {
             context.startActivity(Intent(context, SongInfoActivity::class.java))
     }
 
+
     private lateinit var ivSongArtWork: ImageView
     private lateinit var tvSongName: TextView
     private lateinit var tvSongAlbum: TextView
@@ -31,6 +32,7 @@ class SongInfoActivity : AppCompatActivity() {
     private lateinit var tvSongGenre: TextView
     private lateinit var tvSongTrackPrice: TextView
     private lateinit var tvSongCollectionPrice: TextView
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -65,4 +67,7 @@ class SongInfoActivity : AppCompatActivity() {
                 .toString()
         } ?: "-"
     }
+
+
+
 }
