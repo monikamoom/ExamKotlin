@@ -6,6 +6,7 @@ import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.core.view.isVisible
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.DefaultItemAnimator
 import androidx.recyclerview.widget.DividerItemDecoration
@@ -31,7 +32,12 @@ class ThreeFragment : Fragment() {
 //            val intent = Intent(context, ShowFragment::class.java)
 //            intent.putExtra("name", _view.textName.toString())
 //            startActivity(intent)
-            //_view.textName.
+            _view.textName.isVisible = false
+            _view.LogBtn.isVisible = false
+            _view.command.text = _view.textName.text
+
+
+
 
         }
 
